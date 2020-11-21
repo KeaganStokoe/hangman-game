@@ -21,7 +21,8 @@ const getCountry = async (countryCode) => {
 }
 
 const getLocation = async () => {
-    const response = await fetch('//ipinfo.io/json?token=72432f6c2dab20')
+    //insert your token in the request url below (find token at https://ipinfo.io)
+    const response = await fetch('//ipinfo.io/json?token=xxxxxxxxxx')
 
     if(response.status === 200) {
         return response.json()
